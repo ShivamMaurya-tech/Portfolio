@@ -24,7 +24,7 @@
 html{
     scroll-behavior:smooth;
 }
-
+  
 body{
 
     font-family:'Poppins',sans-serif;
@@ -98,7 +98,8 @@ ul{
 
 header{
 
-    position:fixed;
+    /* position:fixed; */
+    position:sticky;
 
     top:0;
 
@@ -125,7 +126,7 @@ header .container{
 
     padding:18px 0;
 }
-
+ 
 .logo a{
 
     font-size:1.8rem;
@@ -143,7 +144,7 @@ nav ul{
 
     gap:35px;
 }
-
+ 
 nav a{
 
     color:white;
@@ -207,35 +208,40 @@ nav a:hover::after{
     transform:translateY(-4px);
 
     box-shadow:0 15px 30px rgba(56,189,248,.35);
-}
+} 
 
 /* ======================================================
    HERO SECTION
 ====================================================== */
 
-.hero{
 
-    min-height:100vh;
+
+
+
+
+ .hero{
+
+    min-height:40vh;
+   
 
     display:flex;
 
     align-items:center;
 
     /* padding-top:120px; */
-    
-}
+     } 
 
 .hero-content{
 
     display:grid;
 
     grid-template-columns:repeat(2,1fr);
-
+/* margin-left: 150px; */
     gap:70px;
 
     align-items:center;
 }
-
+  
 .hero-text h3{
 
     color:var(--primary);
@@ -257,7 +263,7 @@ nav a:hover::after{
 
     animation:fadeUp 1.2s;
 }
-
+ 
 .hero-text h2{
 
     color:var(--muted);
@@ -279,7 +285,7 @@ nav a:hover::after{
 
     animation:fadeUp 1.6s;
 }
-
+ 
 .hero-buttons{
 
     display:flex;
@@ -306,14 +312,14 @@ nav a:hover::after{
 
     font-weight:600;
 }
-
+ 
 .btn:hover{
 
     transform:translateY(-5px);
 
     box-shadow:0 15px 30px rgba(56,189,248,.4);
 }
-
+ 
 .btn-outline{
 
     background:transparent;
@@ -329,7 +335,7 @@ nav a:hover::after{
 .hero-image{
 
     display:flex;
-
+margin-top: 20px;
     justify-content:center;
     ;
 }
@@ -349,7 +355,7 @@ nav a:hover::after{
     box-shadow:var(--shadow);
 
     animation:float 4s ease-in-out infinite;
-}
+} 
 
 /* ======================================================
    SECTION TITLE
@@ -365,7 +371,7 @@ nav a:hover::after{
 
     position:relative;
 }
-
+  
 .section-title::after{
 
     content:"";
@@ -381,8 +387,8 @@ nav a:hover::after{
     margin:15px auto;
 
     border-radius:20px;
-}
-
+} 
+ 
 
 
 
@@ -395,7 +401,7 @@ nav a:hover::after{
    ABOUT SECTION
 ====================================================== */
 
-.about{
+ .about{
 
     padding:100px 0;
 
@@ -412,14 +418,14 @@ nav a:hover::after{
 
     align-items:center;
 }
-
+ 
 .about-image{
 
     display:flex;
 
     justify-content:center;
 }
-
+ 
 .about-image img{
 
     width:300px;
@@ -441,7 +447,7 @@ nav a:hover::after{
 
     transform:scale(1.05) rotate(2deg);
 }
-
+ 
 .about-text h3{
 
     font-size:2rem;
@@ -483,7 +489,7 @@ nav a:hover::after{
 
     transition:.35s;
 }
-
+  
 .about-info div:hover{
 
     transform:translateY(-8px);
@@ -515,13 +521,13 @@ nav a:hover::after{
    SKILLS
 ====================================================== */
 
-.skills{
+ .skills{
 
     padding:100px 0;
 
     background:#0f172a;
 }
-
+  
 .skills-grid{
 
     display:grid;
@@ -530,7 +536,7 @@ nav a:hover::after{
 
     gap:30px;
 }
-
+  
 .skill-card{
 
     background:rgba(255,255,255,.05);
@@ -551,7 +557,7 @@ nav a:hover::after{
 
     overflow:hidden;
 }
-
+ 
 .skill-card::before{
 
     content:"";
@@ -611,7 +617,7 @@ nav a:hover::after{
     font-size:1.2rem;
 
     font-weight:600;
-}
+} 
 
 /* ======================================================
    PROJECTS
@@ -691,6 +697,7 @@ nav a:hover::after{
     line-height:1.7;
 
     min-height:70px;
+    
 }
 
 .project-links{
@@ -721,8 +728,8 @@ nav a:hover::after{
 
     box-shadow:
     0 0 20px rgba(56,189,248,.15),
-    0 20px 40px rgba(0,0,0,.35);
-}
+    0 20px 40px rgba(0,0,0,.35); 
+ } 
 
 
 
@@ -733,12 +740,11 @@ nav a:hover::after{
 /* ======================================================
    CONTACT SECTION
 ====================================================== */
-
+ 
 .contact{
     padding:100px 0;
     background:#0f172a;
 }
-
 .contact-wrapper{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -751,7 +757,7 @@ nav a:hover::after{
     color:var(--primary);
     margin-bottom:20px;
 }
-
+  
 .contact-info p{
     color:#cbd5e1;
     line-height:1.8;
@@ -827,14 +833,14 @@ nav a:hover::after{
 }
 
 .contact-form button{
-    width:max-content;
-}
+    width:max-content; 
+ }  
 
 /* ======================================================
    FOOTER
 ====================================================== */
 
-footer{
+ footer{
 
     background:#020617;
 
@@ -972,7 +978,7 @@ footer .copyright{
 ::-webkit-scrollbar-thumb:hover{
 
     background:#0ea5e9;
-}
+} 
 
 /* ======================================================
    RESPONSIVE - TABLET
@@ -983,7 +989,7 @@ footer .copyright{
 .hero-content{
 
     grid-template-columns:1fr;
-margin-top: 40px;
+margin-top: -14rem;
     text-align:center;
     
 }
@@ -1015,24 +1021,33 @@ margin-top: 40px;
     grid-template-columns:1fr;
 }
 
-header .container{
+ header .container{
 
-    flex-direction:column;
+    flex-direction:column; 
+    margin-left: 20px;
 
-    gap:20px;
-}
+     /* gap:20px;  */
+ }    
 
-nav ul{
 
-    gap:20px;
+ .resume-btn{
+    margin-left: 20px;
+ } 
+ nav ul{
 
-    flex-wrap:wrap;
+    
+
+    column-gap: 12px;
 
     justify-content:center;
+} 
+.logo{
+    line-height: 20px;
+    margin-right: 13px;
 }
+  
 
-}
-
+} 
 /* ======================================================
    RESPONSIVE - MOBILE
 ====================================================== */
@@ -1042,6 +1057,7 @@ nav ul{
 .hero{
 
    padding-top: 20rem;
+   
 }
 
 .hero-text h1{
@@ -1099,8 +1115,16 @@ nav ul{
 
     text-align:center;
 }
+nav ul{
 
+    
+
+    
+
+    justify-content:center;
 }
+
+} 
 
 /* ======================================================
    EXTRA SMALL DEVICES
@@ -1112,13 +1136,13 @@ nav ul{
 
     font-size:1.5rem;
 }
-
-nav ul{
+/* 
+ nav ul{
 
     flex-direction:column;
 
     gap:12px;
-}
+}  */
 
 .hero-text h1{
 
@@ -1151,9 +1175,7 @@ nav ul{
     height:45px;
 }
 
-}
-
-
+} 
 
 
 
@@ -1162,13 +1184,12 @@ nav ul{
 /*  💡 One important CSS addition*/
 
 
-
 nav a.active {
     color: var(--primary);
 }
 
 nav a.active::after {
     width: 100%;
-}
+} 
 
-
+  
